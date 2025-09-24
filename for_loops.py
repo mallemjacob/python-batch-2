@@ -1,3 +1,6 @@
+# select lines to comment out
+# remove comments in code = Ctrl /
+
 #for loops runs certain number of times
 
 # counter = 0
@@ -63,3 +66,6 @@ name = ''
 while name != 'exit':
     name = input()
     print('hi ' + name)
+
+# select lines to comment out
+# remove comments in code = Ctrl /
