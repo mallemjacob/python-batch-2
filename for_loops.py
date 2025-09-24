@@ -62,10 +62,10 @@
 #         print(False)
 #         new_var = False
 
-name = ''
-while name != 'exit':
-    name = input()
-    print('hi ' + name)
+# name = ''
+# while name != 'exit':
+#     name = input()
+#     print('hi ' + name)
 
 # select lines to comment out
 # remove comments in code = Ctrl /
