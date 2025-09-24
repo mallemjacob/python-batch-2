@@ -2,7 +2,7 @@
 # writte on septmener 1, 2025
 # written by me
 
-#data types
+##### data types ######
 #strings
 #integers
 #float
@@ -43,7 +43,7 @@
 # #or
 # print(True or True)
 # print("Line 46:")
-# print(2 > 1 or  10 < 5)
+# print(2 > 1 or  10 < 5) #True
 # print(True or False)
 # print(False or True)
 # print(False or False)
@@ -57,4 +57,3 @@
 # print('hi' == 'bye')
 # print('ashok' != 'ashok')
 # print('priyanka' != 'ashok')
-
