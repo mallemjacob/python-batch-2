@@ -3,10 +3,18 @@
 # written by me
 
 ##### data types ######
-#strings
-#integers
-#float
-#boolean
+#strings - 'hi', 'hello', "welcome"
+#integers - 2, 4,
+#float - 2.1 10.6
+#boolean - True, False
+
+'hi' + 'there'
+
+# Falsy Values
+0
+0.0
+''
+
 
 #operators
 #arthemetic operator --> +, -, /, //, **, %, *

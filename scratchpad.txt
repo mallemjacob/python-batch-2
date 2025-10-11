@@ -1,0 +1,8 @@
+vkyre #input()
+ju #input()
+variable
+
+#compare two names and remove the matched characters
+#get the number of charcaters from both inputs
+#loop through flames and remove the last index
+#display the last remaining charcter
