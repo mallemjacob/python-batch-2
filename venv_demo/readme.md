@@ -13,6 +13,8 @@ source .venv/bin/activate
 
 # Download the packages
 pip install requests
+pip install flask
+pip install -q -U google-genai
 
 # create a new python file app.py
 touch app.py
