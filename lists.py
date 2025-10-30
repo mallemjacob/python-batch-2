@@ -1,4 +1,4 @@
-         #-3   #-2   #-1                     
+                        #-3   #-2   #-1                     
 # spam = ['cat','rat','bat','black','red']
          #0    #1     #2    #3
 
@@ -6,7 +6,7 @@
 # print(spam[1])
 # print(spam[2])
 
-#CRUD
+#CRUD - Create, read, update and delete
 #reading list item
 # print(spam[-1])
 # print(spam[len(spam) - 1])
@@ -23,7 +23,7 @@
 # #creating list
 # colors = []
 
-# colors = colors + ['black']
+# colors = ['white'] + ['black']
 # colors = colors + ['blue']
 
 # print(colors)
@@ -59,15 +59,45 @@
 # print(catNames)
 
 
-def sum3(nums): #[1, 2, 3, 4, 5, 6]
-    sum = 0
-    for i in nums: #1, 2, 3, 4, 5, 6
-        if i == 3:
-            continue
-        sum = sum + i
-    print(sum)
+# def sum3(nums): #[1, 2, 3, 4, 5, 6]
+#     sum = 0
+#     for i in nums: #1, 2, 3, 4, 5, 6
+#         if i == 3:
+#             continue
+#         sum = sum + i
+#     print(sum)
 
 
-sum3([1, 2, 3, 4, 5, 6]) # 18
-sum3([1, 2]) #3
-sum3([1, 2, 3, 4, 5]) #12
+# sum3([1, 2, 3, 4, 5, 6]) # 18
+# sum3([1, 2]) #3
+# sum3([1, 2, 3, 4, 5]) #12
+
+#enumerate
+spam = ['cat','rat','bat','black','red']
+
+for index, item in enumerate(spam):
+    print("Index :" + str(index) + " Item: " + item)
+
+#Multiple assignment or Tuple unpacking
+
+cat = ['black','loud','fast']
+color = cat[0]
+sound = cat[1]
+speed = cat[2]
+
+colors, sound, speed = cat
+# print(colors)
+# print(sound)
+# print(speed)
+
+
+#Index method
+cat = ['black','loud','fast']
+print(cat.index('fast'))
+
+for i in cat:
+    val = input()
+    if val not in cat:
+        print(cat.index(val))
+    else:
+        print('List item do not exist')
