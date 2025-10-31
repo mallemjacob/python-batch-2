@@ -73,31 +73,79 @@
 # sum3([1, 2, 3, 4, 5]) #12
 
 #enumerate
-spam = ['cat','rat','bat','black','red']
+# spam = ['cat','rat','bat','black','red']
 
-for index, item in enumerate(spam):
-    print("Index :" + str(index) + " Item: " + item)
+# for index, item in enumerate(spam):
+#     print("Index :" + str(index) + " Item: " + item)
 
 #Multiple assignment or Tuple unpacking
 
-cat = ['black','loud','fast']
-color = cat[0]
-sound = cat[1]
-speed = cat[2]
+# cat = ['black','loud','fast']
+# color = cat[0]
+# sound = cat[1]
+# speed = cat[2]
 
-colors, sound, speed = cat
+# colors, sound, speed = cat
 # print(colors)
 # print(sound)
 # print(speed)
 
 
 #Index method
-cat = ['black','loud','fast']
-print(cat.index('fast'))
+# cat = ['black','loud','fast']
+# print(cat.index('fast'))
 
-for i in cat:
-    val = input()
-    if val not in cat:
-        print(cat.index(val))
-    else:
-        print('List item do not exist')
+# for i in cat:
+#     val = input()
+#     if val in cat:
+#         print(cat.index(val))
+#     else:
+#         print('List item do not exist')
+
+# Add items to list (list concatnation)
+# spam = []
+# spam = spam + ['cat']
+# print(spam)
+
+#append method
+# spam.append('dog')
+# print(spam)
+
+#List methods
+#append
+#insert
+#remove
+#sort
+#reverse
+
+# spam = ['cat','bat','rat','mat']
+# spam.append('dog')
+# print(spam)
+
+#insert method
+
+# spam.insert(1, 'dog')
+# print(spam)
+
+# spam[3] = 'hi'
+# print(spam)
+
+#remove method
+# spam.remove('cat')
+# print(spam)
+
+#sort method
+# spam = ['cat','bat','rat','mat']
+# spam.sort()
+# print(spam)
+
+spam = ['cat','bat','CAT', 'RAT','rat','mat']
+spam.sort(key=str.lower)
+print(spam)
+
+#reversing the list
+# print(spam[::-1])
+
+#reverse method
+# spam.reverse()
+# print(spam)
