@@ -139,9 +139,9 @@
 # spam.sort()
 # print(spam)
 
-spam = ['cat','bat','CAT', 'RAT','rat','mat']
-spam.sort(key=str.lower)
-print(spam)
+# spam = ['cat','bat','CAT', 'RAT','rat','mat']
+# spam.sort(key=str.lower)
+# print(spam)
 
 #reversing the list
 # print(spam[::-1])
@@ -149,3 +149,28 @@ print(spam)
 #reverse method
 # spam.reverse()
 # print(spam)
+
+spam = ['cat','bat','rat','mat']
+colors = ['black','red']
+
+#extend
+spam.extend(colors)
+
+print(spam)
+
+#pop
+remove_val = spam.pop()
+print(spam)
+print(remove_val)
+
+spam.pop(0)
+print(spam)
+
+#clear
+spam.clear()
+print(spam)
+
+#count
+spam = ['cat','bat','rat','mat','cat']
+print(spam.count('cat'))
+
