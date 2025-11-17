@@ -67,22 +67,89 @@
 # if it dont exists, ask the value for that key
 # Add that key and value to the dictionary.
 
-books = {}
+# books = {}
 
-while True:
-    print('Enter a book name: ') 
-    book_title = input() #stranger
-    if book_title == '':
-        break
-    else:
-        if book_title in books.keys():
-            print("The books contains " + books[book_title] + " pages.")
-        else:
-            print('Book doesnt exists:')
-            print('Enter the number of pages to add to the dictionary: ')
-            book_pages = input() #96
-            books[book_title] = book_pages
+# while True:
+#     print('Enter a book name: ') 
+#     book_title = input() #stranger
+#     if book_title == '':
+#         break
+#     else:
+#         if book_title in books.keys():
+#             print("The books contains " + books[book_title] + " pages.")
+#         else:
+#             print('Book doesnt exists:')
+#             print('Enter the number of pages to add to the dictionary: ')
+#             book_pages = input() #96
+#             books[book_title] = book_pages
 
-print("Books added: ")
-for i in books.keys():
-    print(i)
+# print("Books added: ")
+# for i in books.keys():
+#     print(i)
+
+spam = {'num1':1,'num2':2,'num3':3}
+
+#get
+print(spam.get('num4',4))
+print(spam)
+
+#setdefault
+print(spam.setdefault('num5',5))
+print(spam)
+
+#update
+spam.update({'num5': 50})
+print(spam)
+
+#pop
+spam.pop('num1')
+print(spam)
+
+#popitem
+spam.popitem()
+print(spam)
+
+# del spam['num1']
+
+#clear()
+spam.clear()
+print(spam)
+
+import pprint
+
+text = 'Browse the docs online or download a copy of your own. Pythons documentation, tutorials, and guides are constantly evolving'
+
+count = {}
+
+for i in text:
+    count.setdefault(i, 0)  # {'B':0}
+    count[i] = count[i] + 1 # {'B':1}
+
+# print(count)
+pprint.pprint(count)
+
+####################################
+students = {
+    "student1": {
+        "name": "Alice",
+        "age": 20,
+        "major": "Computer Science",
+        "grades": {
+            "math": 95,
+            "physics": 88,
+            "programming": 92
+        }
+    },
+    "student2": {
+        "name": "Bob",
+        "age": 21,
+        "major": "Engineering",
+        "grades": {
+            "math": 80,
+            "physics": 90,
+            "chemistry": 85
+        }
+    }
+}
+
+pprint.pprint(students)
