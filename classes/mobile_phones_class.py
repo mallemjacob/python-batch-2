@@ -1,10 +1,12 @@
 class MobilePhones:
     def __init__(self, display, camera, chipset, battery):
+        # Attributes
         self.display_size = display
         self.camera_pixels = camera
         self.chipset_model = chipset
         self.battery_capacity = battery
 
+    # Methods
     def calling(self):
         print("calling....")
     
